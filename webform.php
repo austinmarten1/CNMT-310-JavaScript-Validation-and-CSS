@@ -9,7 +9,8 @@ foreach ($required as $requiredField) {
 
 require_once("Template.php");
 
-$page = new Template("My Page");
+$page = new Template("Confimation Page");
+$page->addHeadElement("<link rel='stylesheet'href='style.css'>");
 $page->finalizeTopSection();
 $page->finalizeBottomSection();
 print "<h1> Welcome </h2>";

@@ -4,11 +4,13 @@
 require_once("Template.php");
 
 $page = new Template("My Page");
+$page->addHeadElement("<script src='hello.js'></script>");
+$page->addHeadElement("<link rel='stylesheet' href='style.css'>");
 $page->finalizeTopSection();
 $page->finalizeBottomSection();
 
 print $page->getTopSection();
-print "User Registration</h1>\n";
+print "<h1>User Registration</h1>\n";
 
 print "<form action='webform.php' method='post'>";
 print "  <label for=\"uname\">UserName:</label><br>\n";
