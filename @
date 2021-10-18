@@ -1,0 +1,10 @@
+<script type="text/javascript">
+function formValidation() {
+    var uname = document.forms["fname"]["uname"].value;
+    var password = document.forms["fname"]["password"].value;
+    var reenterpassword = document.forms["fname"]["reenterpassword"].value;
+    var email = document.forms["fname"]["email"].value;
+    
+    if (uname.length >= 5 ){
+        return false;
+}
