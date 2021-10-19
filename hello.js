@@ -11,9 +11,8 @@ function formValidation() {
     if (reenterpassword !== password || reenterpassword == null){
         return false;
     }
-    var regex = /\S+@\S+\.\S+/;
     var email = document.forms["fname"]["email"].value;
-    if (regex.test(email.value) == false){
+    if (email.length <= 6 || email == null){
         return false;
     }
     

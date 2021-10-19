@@ -12,7 +12,7 @@ $page->finalizeBottomSection();
 print $page->getTopSection();
 print "<h1>User Registration</h1>\n";
 
-print "<form name='fname' action='webform.php' method='post' onsubmit='return formValidation()'>";
+print "<form name='fname' action='webform.php' method='post' onsubmit='return formValidation() && emailValidation();'>";
 print "  <label for=\"uname\">UserName:</label><br>\n";
 print "  <input type=\"text\" id=\"uname\" name=\"uname\" value=\"\"><br>\n";
 print "  <label for=\"password\">Password:</label><br>\n";
